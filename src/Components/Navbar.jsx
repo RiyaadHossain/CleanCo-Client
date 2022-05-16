@@ -3,10 +3,11 @@ import { Link, NavLink } from "react-router-dom";
 
 const Navbar = ({ children }) => {
   return (
-    <div class="drawer">
+    <div class="drawer drawer-end">
       <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
       <div class="drawer-content flex flex-col">
         <div class="w-full lg:px-12 navbar bg-base-100">
+          <div class="flex-1 px-2 text-2xl font-bold mx-2">Clean Co.</div>
           <div class="flex-none lg:hidden">
             <label for="my-drawer-3" class="btn btn-square btn-ghost">
               <svg
@@ -24,7 +25,6 @@ const Navbar = ({ children }) => {
               </svg>
             </label>
           </div>
-          <div class="flex-1 px-2 text-2xl font-bold mx-2">Clean Co.</div>
           <div class="flex-none hidden lg:block">
             <ul class="menu menu-horizontal">
               <li>
